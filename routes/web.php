@@ -15,5 +15,16 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    return view('home');
+    $phone = '012 3456789';
+    $mail = 'tony@stark.magari';
+    $address = 'Avenger Avenue, Polo Sud';
+
+    $contacts = [
+
+        'phone' => $phone,
+        'mail' => $mail,
+        'address' => $address
+    ];
+
+    return view('home', $contacts);
 });

@@ -21,10 +21,13 @@
         </style>
     </head>
     <body>
+        @dump($contacts);
         <header>
             <nav>
                 <ul>
-                    <li>Hello Laravel</li>
+                    @foreach ($contacts as $contact)
+                    <li>{{$contact}}</li>
+                    @endforeach
                 </ul>
             </nav>
         </header>
