@@ -50,4 +50,15 @@ Route::get('immagini', function () {
     return view('myImage', $data);
 })->name('myImage');
 
+Route::get('gioco', function () {
+
+        $computerNumber = rand(1, 10);
+
+    $data = [
+        $computerNumber
+    ];
+
+    return view('game', $data);
+})->name('game');
+
 

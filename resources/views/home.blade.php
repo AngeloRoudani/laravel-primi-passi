@@ -13,7 +13,7 @@
                     <li><a href="{{route('home')}}">Home</a></li>
                     <li><a href="{{route('about')}}">Contatti</a></li>
                     <li><a href="{{route('myImage')}}">Immagini</a></li>
-                    
+                    <li><a href="{{route('game')}}">Gioco</a></li>
                 </ul>
             </nav>
         </header>
