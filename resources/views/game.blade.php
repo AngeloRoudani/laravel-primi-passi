@@ -41,7 +41,13 @@
                 {{$computerNumber}} 
             @endif</div>
 
-           
+           <!-- @if(intval($_GET['userNumber']) > $computerNumber) 
+                <div>Hai vinto</div>
+            @elseif (intval($_GET['userNumber']) == $computerNumber)
+                <div>Hai pareggiato</div>
+            @else 
+                <div>Hai perso</div>
+            @endif-->
         </main>
 
     </body>
