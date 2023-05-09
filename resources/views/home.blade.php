@@ -8,12 +8,12 @@
     </head>
     <body>
         <header>
-            <div></div>
             <nav>
                 <ul>
-                    @foreach ($contacts as $contact)
-                    <li>{{$contact}}</li>
-                    @endforeach
+                    <li><a href="{{route('home')}}">Home</a></li>
+                    <li><a href="{{route('about')}}">Contatti</a></li>
+                    <li><a href="{{route('myImage')}}">Immagini</a></li>
+                    
                 </ul>
             </nav>
         </header>
