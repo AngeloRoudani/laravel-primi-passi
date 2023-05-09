@@ -19,12 +19,14 @@ Route::get('/', function () {
     $mail = 'tony@stark.magari';
     $address = 'Avenger Avenue, Polo Sud';
 
-    $contacts = [
+    $data = [
+        'contacts' => [
+            $phone,
+            $mail,
+            $address
+        ]
 
-        'phone' => $phone,
-        'mail' => $mail,
-        'address' => $address
     ];
 
-    return view('home', $contacts);
+    return view('home', $data);
 });
